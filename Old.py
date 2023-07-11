@@ -393,7 +393,7 @@ logo = """\033[1;32m
 \033[1;37m━▷ \033[0;37m𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆    \033[1;39m◈✙◈    \033[1;37mAB KHANX
 \033[1;37m━▷ \033[0;37m𝙁𝘽 𝙂𝙍𝙊𝙐𝙋    \033[1;39m◈✙◈    \033[1;37mSWATI KI TRICKS
 \033[1;37m━▷ \033[0;37m𝙎𝘼𝙏𝙐𝙏𝘼𝙎     \033[1;39m◈✙◈    \033[0;97mFREE AND ENJOY
-\033[1;37m━▷ \033[0;37m𝙑𝙀𝙍𝙎𝙄𝙊𝙉     \033[1;37m◈✙◈    \033[1;37m2.7
+\033[1;37m━▷ \033[0;37m𝙑𝙀𝙍𝙎𝙄𝙊𝙉     \033[1;37m◈✙◈    \033[1;37m2.8
 --------------------------------------------------"""
 
 class Main:
@@ -868,7 +868,7 @@ class Main:
 				"x-fb-net-hni": str(random.randint(20000, 40000)), 
 				"x-fb-connection-quality": "EXCELLENT",
 				"x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA",
-				"user-agent": 'Mozilla/5.0 (Linux; Android 10; SM-M105M Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.185 Mobile Safari/537.36', 
+				"user-agent": 'Mozilla/5.0 (Linux; Android 14; Sumsung Build/TP1A.601997.071; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5782.220 Mobile Safari/537.36 [FB_IAB/FBIOS;FBAV/196.0.0.61.79;]
 				"content-type": "application/x-www-form-urlencoded", 
 				"x-fb-http-engine": "Liger"
 			}
@@ -1299,7 +1299,7 @@ class Main:
 				"x-fb-net-hni": str(random.randint(20000, 40000)), 
 				"x-fb-connection-quality": "EXCELLENT",
 				"x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA",
-				"user-agent": 'Mozilla/5.0 (Linux; Android 10; SM-M105M Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.185 Mobile Safari/537.36', 
+				"user-agent": 'Mozilla/5.0 (Linux; Android 4; Sumsung Build/JFXQQQ; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.6445.869 Mobile Safari/537.36 [FB_IAB/FBIOS;FBAV/440.0.0.80.77;]
 				"content-type": "application/x-www-form-urlencoded", 
 				"x-fb-http-engine": "Liger"
 			}
